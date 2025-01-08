@@ -116,7 +116,7 @@ namespace Practica8
 
             comandosql.Parameters.Clear();
 
-            comandosql.Parameters.AddWithValue("@pais", comboBox1.Text); // Either 'esp' or 'ing'
+            comandosql.Parameters.AddWithValue("@pais", comboBox1.Text); 
             comandosql.Parameters.AddWithValue("@palabra", "%" + tbBuscar.Text + "%");
 
             SqlDataReader reader = comandosql.ExecuteReader();
